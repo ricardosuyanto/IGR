@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about"
+    android:background="@drawable/wallpaper1">
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="What is Instagram-url Reader (IGR) ?"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/aboutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/adamina"
+        android:text="IGR is an application that is use to instantly read
+        unclickable link, mention or hashtag in an Instagram Story and will then redirect the user
+        towards the link that was captured through screenshot"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="19dp" />
+    <Button
+        android:id="@+id/Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Return"
+        android:backgroundTint="#FCE205"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        />
+</RelativeLayout>

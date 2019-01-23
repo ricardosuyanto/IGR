@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/instagram_gradient">
+
+    <RelativeLayout
+        android:id="@+id/layLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="90dp">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/instagram_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textLogo1"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:id="@+id/textLogo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTA"
+            android:textSize="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/textLogo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRAM"
+            android:textSize="15dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textLogo1"
+            android:layout_centerHorizontal="true"
+            android:textColor="#f7e3f5"/>
+        <TextView
+            android:id="@+id/textLogo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-URL READER"
+            android:layout_marginLeft="4dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/textLogo2"
+            android:layout_toRightOf="@+id/textLogo1"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffd51e"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layLogo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:textStyle="bold"
+        android:text="Click To Contiue" />
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnContinue"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FCE205"
+        android:textStyle="bold"
+        android:text="About" />
+
+</RelativeLayout>
